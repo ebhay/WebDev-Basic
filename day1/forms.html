@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/table">
+        <div>
+            <label for="Username"> Username </label>
+            <input type="text" placeholder="Username" id="Username" name="Username">
+        </div>
+        <div>
+            <label for="email"> Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="email" placeholder="abcd@gmail.com" id="email" name="email">
+        </div>
+        
+        <div>
+            <label for="Password"> Password &nbsp;</label>
+            <input type="password" placeholder="Password" id="Password" name="password">
+        </div>
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+
+    </form>
+    <HR>
+        <form action="https://www.youtube.com/results">
+            <label for="query">Youtube &nbsp;</label>
+            <input type="text" id="query" placeholder="Search in Youtube" name="search_query">
+            <button type="submit">Search</button>
+        </form>  
+    <HR>
+        <form action="https://www.google.com/search">
+            <label for="query">Google &nbsp;</label>
+            <input type="text" id="query" placeholder="Search in Google" name="q">
+            <button type="submit">Search</button>
+        </form>    
+        <hr>
+        <div>
+            <p>CheckBox</p>
+            <label>Subject</label>
+            <input type="checkbox" id="math" name="sub" value="math">
+            <label for="math">Math</label>
+            
+            <input type="checkbox" id="sce" name="sub" value="sce">
+            <label for="sce">Science</label>
+            
+            <input type="checkbox" id="eng" name="sub" value="eng">
+            <label for="eng">English</label>
+        </div>
+        <div>
+            <p>Radio Button</p>
+            <label >Gender</label>
+            <input type="radio" name="Gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="female" value="female">
+            <label for="female">female</label>
+        </div>
+        Select Your Proffession
+        <select name="prof" id="prof">
+            <option>Select Your Option</option>
+            <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+        </select>
+</body>
+</html>
