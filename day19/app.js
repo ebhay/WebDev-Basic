@@ -1,16 +1,18 @@
 function OddEvenRequest(req) {
     if (req === "odd") {
-        const odd = function oddchecker(n) {
+        let odd = function (n) {
             if (n % 2 !== 0) {
                 return true;
             }
             else {
                 return false;
             }
+            
         }
+        return odd;
     }
     else if (req === "even") {
-        const even = function evenchecker(n) {
+        let even = function (n) {
             if (n % 2 === 0) {
                 return true;
             }
@@ -18,6 +20,7 @@ function OddEvenRequest(req) {
                 return false;
             }
         }
+        return even;
     }
     else
     console.log("Invalid request");
