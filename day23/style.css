@@ -1,3 +1,18 @@
+body{
+    text-align: center;
+}
+h1{
+    margin-bottom: 40px;
+}
+button{
+    margin-bottom: 40px;
+}
 div{
-    height: 100px;
+    height: 200px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
 }
