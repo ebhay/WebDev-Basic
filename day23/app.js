@@ -9,6 +9,7 @@ btn.addEventListener("click",function() {
     let div=document.querySelector("div");
     let str=colr();
     div.style.backgroundColor=str;
+    console.log("New Color Generated")
 });
 
 function colr(){
@@ -19,3 +20,9 @@ function colr(){
     return col;
 }
 
+let div=document.querySelector("div");
+div.addEventListener("mouseenter",function(){
+    let str=colr();
+    div.style.backgroundColor=str;
+    console.log("New Color Generated")  
+});
