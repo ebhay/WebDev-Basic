@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+ol {
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+    </style>
 </head>
+
 <body>
     <h1>Todo App</h1>
-    <input type="text" placeholder="Enter Your Task">
-    <button class="sub">Submit Here</button>
-    <button class="del">Delete Task</button>
+    <div>
+        <input type="text" placeholder="Enter Your Task">
+        <button class="sub">Submit Here</button>
+    </div>
     <ol>
-        <li>Eat</li>
-        <li>IOL</li>
+        <li>Eat
+            <button class="delete">Delete Task</button>
+        </li>
+        <li>IOL
+            <button class="delete">Delete Task</button>
+        </li>
     </ol>
     <script src="activity.js"></script>
 </body>
+
 </html>
