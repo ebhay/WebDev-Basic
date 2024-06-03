@@ -28,3 +28,12 @@ sty("red", 1000, () => {
 
 */
 // Promise
+function sty(col){
+    return new Promise((resolve,reject)=>{
+        let speed=Math.floor(Math.random()*10)+1;
+        if(speed>4)
+            resolve();
+        else
+            reject();
+    }
+};
