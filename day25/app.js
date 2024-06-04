@@ -28,12 +28,38 @@ sty("red", 1000, () => {
 
 */
 // Promise
-function sty(col){
+function sty(data){
     return new Promise((resolve,reject)=>{
         let speed=Math.floor(Math.random()*10)+1;
-        if(speed>4)
-            resolve();
+        if(speed>4  )
+
+            resolve("success:data was saved");
         else
-            reject();
-    }
+            reject("failur:data fucked up");
+    })
 };
+/*
+sty().then(()=>{
+    console.log("resolved: data 1 saved");
+    sty().then(()=>{
+        console.log("resolved: data 2 saved");
+    });
+}).catch(()=>{
+    console.log("rejected");
+});
+*/
+sty("apna college")
+.then((result)=>{
+    console.log("resolved: data 1 saved");
+    console.log("status"+result);
+    return sty();
+})
+.then((result)=>{
+    console.log("resolved: data 2 saved");
+    console.log("status"+result);
+})
+.catch((error)=>{
+    console.log("status"+error);
+    console.log("rejected");
+});
+
