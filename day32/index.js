@@ -2,8 +2,11 @@ const express = require("express");
 const app = express();
 const port = 8080;
 
-app.set("view engine", "ejs");
+const path = require('path');
 
+app.set("view engine", "ejs");
+app.use(express.static("./public"));
+app.set("views",path.join(__dirname,"./views"));
 //Now We Will Access data from data base
 app.get("/ig/:username", (req, res) => {
     let { username } = req.params;
