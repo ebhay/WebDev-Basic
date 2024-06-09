@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #262626;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        button {
+            background: #3897f0;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background: #3578e5;
+        }
+
+        h3 {
+            color: #262626;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .item {
+            background: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .img {
+            max-height: 300px;
+            width: 100%;
+        }
+
+        .post-info {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .post-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #262626;
+        }
+
+        .like-icon {
+            color: #e74c3c;
+            margin-right: 5px;
+        }
+    </style>
+</head>

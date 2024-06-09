@@ -15,7 +15,8 @@ btn.addEventListener("click", async () => {
     let p = document.querySelector("p");
     let img = document.querySelector("img");
     p.textContent = factData.fact;
-    img.src = imgData[0].url;
+    img.src = imgData[0].url ;
+    //Ion
 });
 const uli = "https://icanhazdadjoke.com/";
 async function getJoke() {
