@@ -7,12 +7,16 @@ app.get("/register",(req,res)=>{
     res.send(`Standard GET Response ${user}`);
 });
 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 app.post("/register",(req,res)=>{
-    let  {user,pass}=req.query;
+    console.log(req.body);
+    let  {user,password}=req.body;
     res.send(`Standard POST Response ${user}`);
 });
 
 app.listen(port,()=>{
+
     console.log(`Server started on port ${port}`);
 });
