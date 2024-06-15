@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post id - <%= post.id %>
+    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body style="background-color: aqua;">
+    <h1>Quora</h1>
+    <a href="/posts/new">New Post</a>
+    <h3>Post Details: <%= post.id %>
+    </h3>
+    <h3 class="user">@<%= post.username %>
+    </h3>
+    <form method="post" action="/posts/<%= post.id %>/edit">
+        <input type="text" name="title" value="<%= post.content.title %>">
+        <textarea name="description"><%= post.content.description %></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
