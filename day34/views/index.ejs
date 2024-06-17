@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=San+Francisco:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   <h1>Quora</h1>
-   <a href="/posts/new">New Post</a> 
-   <% for(post of posts) { %>
-        <div class="post">
-            <h3 class="user">@<%= post.username %></h3>
-            <h4 class="content"><%= post.content.title %></h4>
-            <p class="description"><%= post.content.description %></p>
-            <a href="/posts/<%= post.id %>">See in Detail</a>
-            <a href="/posts/<%= post.id %>/edit">Edit Post</a>
+    <header>
+        <h1>Quora</h1>
+        <a href="/posts/new" class="new-post">New Post</a>
+    </header>
+
+    <main>
+        <div class="post-container">
+            <% for(post of posts) { %>
+                <div class="post">
+                    <div class="post-header">
+                        <h3 class="user">@<%= post.username %>
+                            
+                        </h3>
+                        <br>
+                        <h4 class="content">
+                            <%= post.content.title %>
+                        </h4>
+                    </div>
+                    <p class="description">
+                        <%= post.content.description %>
+                    </p>
+                    <div class="post-actions">
+                        <a href="/posts/<%= post.id %>">See in Detail</a>
+                        <a href="/posts/<%= post.id %>/edit">Edit Post</a>
+                        <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                            <button class="delete">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                <% } %>
         </div>
-    <% } %> 
+    </main>
 </body>
+
 </html>

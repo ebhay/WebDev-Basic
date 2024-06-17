@@ -1,9 +1,111 @@
-h1{
-    color : maroon;
-}
-.post{
-    background-color: pink;
-}
-.user{
-    font-style: italic;
-}
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #1c1c1e;
+    color: #ddd;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  a {
+    color: #48bb78;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #2f855a;
+  }
+  
+  /* Post Container */
+  .post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Post Styles */
+  .post {
+    background-color: #333;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .user {
+    color: #48bb78;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .content {
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #48bb78;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #2f855a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  button.delete {
+    background-color: #ff3b30;
+  }
+  
+  button.delete:hover {
+    background-color: #e53935;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 767px) {
+    .post-container {
+      grid-template-columns: 1fr;
+    }
+  }
