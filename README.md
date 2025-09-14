@@ -101,13 +101,6 @@ Each project has its own README file, which provides more information about the 
 
 
 <br><br>
-<div align="center">
-<img src="https://avatars.githubusercontent.com/u/111756624?v=4" width="120" />
-<h3>Abhay Gupta</h3>
-<p>Passionate developer & lifelong learner, seeking to break boundaries through code.</p>
-</div>
+
 <br>
-<p align="right">
-<img src="https://gitfull.vercel.app/appLogo.png" width="20"/>  <a href="https://gitfull.vercel.app">Made by GitFull</a>
-</p>
     
